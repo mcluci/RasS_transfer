@@ -1,0 +1,15 @@
+
+export PDSH_RCMD_TYPE=ssh
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/bin:/sbin:/usr/local/spark/bin:/usr/>
+JAVA_HOME=$(dirname $( readlink -f $(which java) ))
+JAVA_HOME=$(realpath "$JAVA_HOME"/../)
+export JAVA_HOME
+export SPARK_HOME="/usr/local/spark"
+#export SPARK_HOME=/home/spark/.local/lib/python3.8/site-packages/pyspark
+export PYSPARK_PYTHON="/usr/bin/python3"
+export HADOOP_HOME="/usr/local/hadoop"
+export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+#export PYSPARK_DRIVER_PYTHON="jupyter"
+#export PYSPARK_DRIVER_PYTHON_OPTS="notebook --no-browser --port=8889"
+#export PATH=$PATH:~/.local/bin
+export SPARK_LOCAL_IP="192.168.56.102"
